@@ -31,7 +31,7 @@ $topbar.appendChild($fan)
 $topbar.appendChild($poker)
 $topbar.appendChild($sort)
 
-var deck = Deck()
+var deck = Deck(true, 2)
 
 // easter eggs start
 
@@ -67,7 +67,7 @@ deck.cards.forEach(function (card, i) {
       if (kingsClicked.filter(function (king) {
         return king
       }).length === 4) {
-        for (var j = 0; j < 3; j++) {
+        for (var j = 0; j < 2; j++) {
           card = Deck.Card(52 + j)
           card.mount(deck.$el)
           card.$el.style[transform] = 'scale(0)'
@@ -98,7 +98,7 @@ function startWinning () {
 
   var side = Math.floor(Math.random() * 2) ? 'front' : 'back'
 
-  for (var i = 0; i < 55; i++) {
+  for (var i = 0; i < 54; i++) {
     addWinningCard($winningDeck, i, side)
   }
 
@@ -107,7 +107,7 @@ function startWinning () {
 
 function addWinningCard ($deck, i, side) {
   var card = Deck.Card(54 - i)
-  var delay = (55 - i) * 20
+  var delay = (54 - i) * 20
   var animationFrames = Deck.animationFrames
   var ease = Deck.ease
 

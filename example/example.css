@@ -132,15 +132,16 @@ body {
 }
 .card.hearts,
 .card.diamonds,
-.card.joker.rank3 {
+.card.joker.rank2 {
+/*.card.joker.rank3*/
   color: #d40000;
 }
 .card.joker.rank1:before,
 .card.joker.rank2:before,
-.card.joker.rank3:before,
+/*.card.joker.rank3:before,*/
 .card.joker.rank1:after,
-.card.joker.rank2:after,
-.card.joker.rank3:after {
+.card.joker.rank2:after {
+/*.card.joker.rank3:after*/
   content: "J\a O\a K\a E\a R";
   letter-spacing: 0;
   font-size: 0.4rem;
@@ -362,9 +363,9 @@ body {
 .card.joker.rank2 .face {
   background-image: url("faces/4_2.svg");
 }
-.card.joker.rank3 .face {
+/*.card.joker.rank3 .face {
   background-image: url("faces/4_3.svg");
-}
+}*/
 @media (max-width: 540px) {
   #topbar {
     text-align: left;

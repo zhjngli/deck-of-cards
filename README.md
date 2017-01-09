@@ -1,4 +1,6 @@
 # HTML5 Deck of Cards
+Slightly modified version of https://deck-of-cards.js.org to allow for n decks of cards, and to only use 2 jokers, because who uses 3 jokers.
+
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/pakastin/deck-of-cards?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 Pure vanilla JS (+ CSS3) – no dependencies, by [Juha Lindstedt](https://github.com/pakastin) & [contributors](https://github.com/pakastin/deck-of-cards/graphs/contributors).
